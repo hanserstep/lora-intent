@@ -1,0 +1,201 @@
+{"id": "t0044", "text": "app-node-3 到 172.16.0.9 的请求全部超时，ping 丢包率 55%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0035", "text": "gateway-2 的备份目录每天增长 20G，磁盘快撑不住了", "label": "disk", "template_id": "disk-7", "split": "test"}
+{"id": "t0131", "text": "db-01 可用内存不足，页缓存被大量回收，读性能下降", "label": "memory", "template_id": "memory-4", "split": "train"}
+{"id": "t0166", "text": "大事务长时间未提交，锁住了 user-center 的热点行，影响其他写入", "label": "database", "template_id": "database-7", "split": "test"}
+{"id": "t0047", "text": "gateway-2 到 192.168.7.45 的请求全部超时，ping 丢包率 25%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0062", "text": "web-02 和 10.2.3.11 之间的延迟从 2ms 涨到 720ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0034", "text": "web-01 的备份目录每天增长 10G，磁盘快撑不住了", "label": "disk", "template_id": "disk-7", "split": "test"}
+{"id": "t0023", "text": "磁盘 IO 长时间 100%，/var/log 上的大文件导致写入阻塞", "label": "disk", "template_id": "disk-4", "split": "train"}
+{"id": "t0121", "text": "java 的堆内存持续增长，Full GC 后没有回落，疑似泄漏", "label": "memory", "template_id": "memory-1", "split": "train"}
+{"id": "t0018", "text": "gateway-2 上 inode 用尽，无法创建新文件，df -i 显示 100%", "label": "disk", "template_id": "disk-3", "split": "train"}
+{"id": "t0073", "text": "VPN 拨号后内网地址不通，cache-01 的路由表缺少对应条目", "label": "network", "template_id": "network-8", "split": "test"}
+{"id": "t0050", "text": "域名解析返回 NXDOMAIN，user-center 无法连接下游依赖", "label": "network", "template_id": "network-1", "split": "train"}
+{"id": "t0153", "text": "user-center 和数据库之间频繁死锁，事务被回滚", "label": "database", "template_id": "database-2", "split": "train"}
+{"id": "t0109", "text": "web-01 的 CPU 温度过高触发降频，性能下降一半", "label": "cpu", "template_id": "cpu-8", "split": "test"}
+{"id": "t0187", "text": "配置变更后 payment-gateway 没有生效，需要确认是否 reload", "label": "other", "template_id": "other-4", "split": "train"}
+{"id": "t0013", "text": "/data 分区剩余空间不足 1G，需要清理历史归档", "label": "disk", "template_id": "disk-2", "split": "train"}
+{"id": "t0020", "text": "db-01 上 inode 用尽，无法创建新文件，df -i 显示 100%", "label": "disk", "template_id": "disk-3", "split": "train"}
+{"id": "t0160", "text": "web-01 的 binlog 增长速度异常，磁盘被日志占满", "label": "database", "template_id": "database-5", "split": "train"}
+{"id": "t0083", "text": "进程 python3 占满单核，order-service 接口响应时间从 50ms 涨到 8000ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0028", "text": "app-node-3 的数据盘被日志撑满，order-service 服务开始报错", "label": "disk", "template_id": "disk-5", "split": "train"}
+{"id": "t0142", "text": "order-service 的容器内存 limit 设得太小，应用启动时就被 kill", "label": "memory", "template_id": "memory-7", "split": "test"}
+{"id": "t0144", "text": "内存泄漏要几天才显现，report-job restart 后能恢复但会复发", "label": "memory", "template_id": "memory-8", "split": "test"}
+{"id": "t0033", "text": "web-02 清理完日志后空间没有释放，怀疑有进程持有已删除的文件", "label": "disk", "template_id": "disk-6", "split": "test"}
+{"id": "t0003", "text": "web-02 的 /var/log 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0140", "text": "report-job 的容器内存 limit 设得太小，应用启动时就被 kill", "label": "memory", "template_id": "memory-7", "split": "test"}
+{"id": "t0147", "text": "MySQL 主从延迟达到 90 秒，读请求拿到旧数据", "label": "database", "template_id": "database-0", "split": "train"}
+{"id": "t0054", "text": "gateway-2 的带宽跑满，出口流量达到上限，请求排队", "label": "network", "template_id": "network-2", "split": "train"}
+{"id": "t0126", "text": "order-service 的缓存没有设置上限，内存占用随请求量线性上涨", "label": "memory", "template_id": "memory-3", "split": "train"}
+{"id": "t0185", "text": "配置变更后 user-center 没有生效，需要确认是否 reload", "label": "other", "template_id": "other-4", "split": "train"}
+{"id": "t0132", "text": "web-01 可用内存不足，页缓存被大量回收，读性能下降", "label": "memory", "template_id": "memory-4", "split": "train"}
+{"id": "t0177", "text": "告警通知没有发出来，web-02 的钉钉机器人 token 失效", "label": "other", "template_id": "other-2", "split": "train"}
+{"id": "t0011", "text": "服务器 web-02 磁盘使用率 98%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0075", "text": "VPN 拨号后内网地址不通，web-01 的路由表缺少对应条目", "label": "network", "template_id": "network-8", "split": "test"}
+{"id": "t0069", "text": "跨机房专线出现丢包，web-01 到 192.168.7.45 的同步延迟持续升高", "label": "network", "template_id": "network-6", "split": "test"}
+{"id": "t0152", "text": "payment-gateway 和数据库之间频繁死锁，事务被回滚", "label": "database", "template_id": "database-2", "split": "train"}
+{"id": "t0106", "text": "压测期间 web-01 的 CPU 软中断占比过高，怀疑网卡中断集中在一个核", "label": "cpu", "template_id": "cpu-7", "split": "test"}
+{"id": "t0061", "text": "app-node-3 和 192.168.7.45 之间的延迟从 2ms 涨到 520ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0151", "text": "慢查询数量激增，连接池被占满，新的请求排队等待", "label": "database", "template_id": "database-1", "split": "train"}
+{"id": "t0112", "text": "web-02 的 CPU 温度过高触发降频，性能下降一半", "label": "cpu", "template_id": "cpu-8", "split": "test"}
+{"id": "t0031", "text": "app-node-3 清理完日志后空间没有释放，怀疑有进程持有已删除的文件", "label": "disk", "template_id": "disk-6", "split": "test"}
+{"id": "t0124", "text": "cache-01 的 swap 使用量激增，系统开始频繁换页，响应变慢", "label": "memory", "template_id": "memory-2", "split": "train"}
+{"id": "t0114", "text": "app-node-3 内存使用率 97%，OOM killer 杀掉了 python3 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0100", "text": "web-01 上某个进程 CPU 占用曲线呈锯齿状，疑似死循环", "label": "cpu", "template_id": "cpu-5", "split": "train"}
+{"id": "t0167", "text": "大事务长时间未提交，锁住了 payment-gateway 的热点行，影响其他写入", "label": "database", "template_id": "database-7", "split": "test"}
+{"id": "t0076", "text": "VPN 拨号后内网地址不通，gateway-2 的路由表缺少对应条目", "label": "network", "template_id": "network-8", "split": "test"}
+{"id": "t0129", "text": "cache-01 可用内存不足，页缓存被大量回收，读性能下降", "label": "memory", "template_id": "memory-4", "split": "train"}
+{"id": "t0004", "text": "gateway-2 的 /home/deploy 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0099", "text": "report-job 的 worker 线程池打满，CPU 满载导致请求超时", "label": "cpu", "template_id": "cpu-4", "split": "train"}
+{"id": "t0030", "text": "gateway-2 清理完日志后空间没有释放，怀疑有进程持有已删除的文件", "label": "disk", "template_id": "disk-6", "split": "test"}
+{"id": "t0154", "text": "order-service 和数据库之间频繁死锁，事务被回滚", "label": "database", "template_id": "database-2", "split": "train"}
+{"id": "t0002", "text": "web-02 的 /data 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0001", "text": "web-01 的 /tmp 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0135", "text": "web-01 上多个进程同时申请大页内存，触发内存碎片问题", "label": "memory", "template_id": "memory-5", "split": "train"}
+{"id": "t0012", "text": "/opt/app 分区剩余空间不足 1G，需要清理历史归档", "label": "disk", "template_id": "disk-2", "split": "train"}
+{"id": "t0081", "text": "app-node-3 的 15 分钟负载平均值达到 12.5，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0014", "text": "/home/deploy 分区剩余空间不足 1G，需要清理历史归档", "label": "disk", "template_id": "disk-2", "split": "train"}
+{"id": "t0200", "text": "不同环境的配置不一致，order-service 测试环境正常生产环境报错", "label": "other", "template_id": "other-8", "split": "test"}
+{"id": "t0043", "text": "app-node-3 到 172.16.0.9 的请求全部超时，ping 丢包率 45%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0119", "text": "mysqld 的堆内存持续增长，Full GC 后没有回落，疑似泄漏", "label": "memory", "template_id": "memory-1", "split": "train"}
+{"id": "t0157", "text": "单表数据量超过 1200 万行，未建索引的查询扫描全表", "label": "database", "template_id": "database-3", "split": "train"}
+{"id": "t0136", "text": "gateway-2 上多个进程同时申请大页内存，触发内存碎片问题", "label": "memory", "template_id": "memory-5", "split": "train"}
+{"id": "t0162", "text": "gateway-2 的 binlog 增长速度异常，磁盘被日志占满", "label": "database", "template_id": "database-5", "split": "train"}
+{"id": "t0125", "text": "db-01 的 swap 使用量激增，系统开始频繁换页，响应变慢", "label": "memory", "template_id": "memory-2", "split": "train"}
+{"id": "t0107", "text": "压测期间 gateway-2 的 CPU 软中断占比过高，怀疑网卡中断集中在一个核", "label": "cpu", "template_id": "cpu-7", "split": "test"}
+{"id": "t0077", "text": "db-01 的 15 分钟负载平均值达到 31.7，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0186", "text": "配置变更后 order-service 没有生效，需要确认是否 reload", "label": "other", "template_id": "other-4", "split": "train"}
+{"id": "t0021", "text": "磁盘 IO 长时间 100%，/data 上的大文件导致写入阻塞", "label": "disk", "template_id": "disk-4", "split": "train"}
+{"id": "t0183", "text": "app-node-3 的系统时间出现偏差，比标准时间慢 510 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0065", "text": "负载均衡健康检查失败，web-02 被摘除，怀疑网络分区", "label": "network", "template_id": "network-5", "split": "train"}
+{"id": "t0134", "text": "app-node-3 上多个进程同时申请大页内存，触发内存碎片问题", "label": "memory", "template_id": "memory-5", "split": "train"}
+{"id": "t0146", "text": "MySQL 主从延迟达到 115 秒，读请求拿到旧数据", "label": "database", "template_id": "database-0", "split": "train"}
+{"id": "t0159", "text": "web-02 的 binlog 增长速度异常，磁盘被日志占满", "label": "database", "template_id": "database-5", "split": "train"}
+{"id": "t0059", "text": "web-02 和 172.16.0.9 之间的延迟从 2ms 涨到 760ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0096", "text": "定时任务集中触发，cache-01 的 CPU 出现周期性尖峰，影响在线请求", "label": "cpu", "template_id": "cpu-3", "split": "train"}
+{"id": "t0074", "text": "VPN 拨号后内网地址不通，web-02 的路由表缺少对应条目", "label": "network", "template_id": "network-8", "split": "test"}
+{"id": "t0191", "text": "新版本发布后 report-job 的灰度节点出现异常，需要回滚", "label": "other", "template_id": "other-6", "split": "test"}
+{"id": "t0180", "text": "db-01 的系统时间出现偏差，比标准时间慢 300 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0036", "text": "db-01 的备份目录每天增长 10G，磁盘快撑不住了", "label": "disk", "template_id": "disk-7", "split": "test"}
+{"id": "t0082", "text": "web-02 的 15 分钟负载平均值达到 16.8，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0122", "text": "gateway-2 的 swap 使用量激增，系统开始频繁换页，响应变慢", "label": "memory", "template_id": "memory-2", "split": "train"}
+{"id": "t0178", "text": "告警通知没有发出来，db-01 的钉钉机器人 token 失效", "label": "other", "template_id": "other-2", "split": "train"}
+{"id": "t0095", "text": "定时任务集中触发，app-node-3 的 CPU 出现周期性尖峰，影响在线请求", "label": "cpu", "template_id": "cpu-3", "split": "train"}
+{"id": "t0101", "text": "web-02 上某个进程 CPU 占用曲线呈锯齿状，疑似死循环", "label": "cpu", "template_id": "cpu-5", "split": "train"}
+{"id": "t0072", "text": "user-center 调用第三方接口偶发 connection reset，重试可以恢复", "label": "network", "template_id": "network-7", "split": "test"}
+{"id": "t0155", "text": "单表数据量超过 500 万行，未建索引的查询扫描全表", "label": "database", "template_id": "database-3", "split": "train"}
+{"id": "t0022", "text": "磁盘 IO 长时间 100%，/tmp 上的大文件导致写入阻塞", "label": "disk", "template_id": "disk-4", "split": "train"}
+{"id": "t0086", "text": "进程 python3 占满单核，order-service 接口响应时间从 50ms 涨到 500ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0127", "text": "payment-gateway 的缓存没有设置上限，内存占用随请求量线性上涨", "label": "memory", "template_id": "memory-3", "split": "train"}
+{"id": "t0128", "text": "report-job 的缓存没有设置上限，内存占用随请求量线性上涨", "label": "memory", "template_id": "memory-3", "split": "train"}
+{"id": "t0184", "text": "web-01 的系统时间出现偏差，比标准时间慢 540 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0024", "text": "磁盘 IO 长时间 100%，/opt/app 上的大文件导致写入阻塞", "label": "disk", "template_id": "disk-4", "split": "train"}
+{"id": "t0016", "text": "/var/log 分区剩余空间不足 1G，需要清理历史归档", "label": "disk", "template_id": "disk-2", "split": "train"}
+{"id": "t0070", "text": "跨机房专线出现丢包，db-01 到 172.16.0.9 的同步延迟持续升高", "label": "network", "template_id": "network-6", "split": "test"}
+{"id": "t0192", "text": "新版本发布后 order-service 的灰度节点出现异常，需要回滚", "label": "other", "template_id": "other-6", "split": "test"}
+{"id": "t0145", "text": "内存泄漏要几天才显现，user-center restart 后能恢复但会复发", "label": "memory", "template_id": "memory-8", "split": "test"}
+{"id": "t0199", "text": "不同环境的配置不一致，report-job 测试环境正常生产环境报错", "label": "other", "template_id": "other-8", "split": "test"}
+{"id": "t0173", "text": "order-service 的 HTTPS 证书还有 3 天过期，需要更新", "label": "other", "template_id": "other-0", "split": "train"}
+{"id": "t0052", "text": "web-02 的带宽跑满，出口流量达到上限，请求排队", "label": "network", "template_id": "network-2", "split": "train"}
+{"id": "t0108", "text": "压测期间 web-02 的 CPU 软中断占比过高，怀疑网卡中断集中在一个核", "label": "cpu", "template_id": "cpu-7", "split": "test"}
+{"id": "t0175", "text": "定时任务没有按时执行，调度器显示上次运行失败", "label": "other", "template_id": "other-1", "split": "train"}
+{"id": "t0064", "text": "负载均衡健康检查失败，web-01 被摘除，怀疑网络分区", "label": "network", "template_id": "network-5", "split": "train"}
+{"id": "t0198", "text": "不同环境的配置不一致，payment-gateway 测试环境正常生产环境报错", "label": "other", "template_id": "other-8", "split": "test"}
+{"id": "t0116", "text": "cache-01 内存使用率 91%，OOM killer 杀掉了 mysqld 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0015", "text": "/tmp 分区剩余空间不足 1G，需要清理历史归档", "label": "disk", "template_id": "disk-2", "split": "train"}
+{"id": "t0193", "text": "db-01 的监控面板数据缺失，采集 agent 掉线了", "label": "other", "template_id": "other-7", "split": "test"}
+{"id": "t0164", "text": "统计信息过期导致 order-service 的执行计划走错索引，查询从 10ms 变成 3s", "label": "database", "template_id": "database-6", "split": "test"}
+{"id": "t0079", "text": "web-01 的 15 分钟负载平均值达到 16.8，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0042", "text": "gateway-2 到 172.16.0.9 的请求全部超时，ping 丢包率 30%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0113", "text": "gateway-2 内存使用率 91%，OOM killer 杀掉了 mysqld 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0008", "text": "服务器 web-02 磁盘使用率 93%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0123", "text": "web-01 的 swap 使用量激增，系统开始频繁换页，响应变慢", "label": "memory", "template_id": "memory-2", "split": "train"}
+{"id": "t0046", "text": "db-01 到 172.16.0.9 的请求全部超时，ping 丢包率 55%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0025", "text": "db-01 的数据盘被日志撑满，user-center 服务开始报错", "label": "disk", "template_id": "disk-5", "split": "train"}
+{"id": "t0168", "text": "cache-01 的只读实例复制线程断了，需要重新建立同步", "label": "database", "template_id": "database-8", "split": "test"}
+{"id": "t0115", "text": "app-node-3 内存使用率 91%，OOM killer 杀掉了 mysqld 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0195", "text": "web-02 的监控面板数据缺失，采集 agent 掉线了", "label": "other", "template_id": "other-7", "split": "test"}
+{"id": "t0092", "text": "cache-01 出现大量 runnable 进程，上下文切换次数异常偏高", "label": "cpu", "template_id": "cpu-2", "split": "train"}
+{"id": "t0087", "text": "进程 node 占满单核，order-service 接口响应时间从 50ms 涨到 200ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0165", "text": "统计信息过期导致 payment-gateway 的执行计划走错索引，查询从 10ms 变成 3s", "label": "database", "template_id": "database-6", "split": "test"}
+{"id": "t0103", "text": "app-node-3 的容器被限制在 2 核，实际负载超过限额，频繁被 throttle", "label": "cpu", "template_id": "cpu-6", "split": "test"}
+{"id": "t0118", "text": "cache-01 内存使用率 94%，OOM killer 杀掉了 nginx 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0138", "text": "payment-gateway 的 JVM 元空间溢出，加载的类数量超出预期", "label": "memory", "template_id": "memory-6", "split": "test"}
+{"id": "t0000", "text": "gateway-2 的 /var/log 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0055", "text": "db-01 的带宽跑满，出口流量达到上限，请求排队", "label": "network", "template_id": "network-2", "split": "train"}
+{"id": "t0179", "text": "web-01 的系统时间出现偏差，比标准时间慢 240 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0005", "text": "web-01 的 /home/deploy 目录已经用满，写入操作报 No space left on device", "label": "disk", "template_id": "disk-0", "split": "train"}
+{"id": "t0190", "text": "新版本发布后 user-center 的灰度节点出现异常，需要回滚", "label": "other", "template_id": "other-6", "split": "test"}
+{"id": "t0048", "text": "域名解析返回 NXDOMAIN，payment-gateway 无法连接下游依赖", "label": "network", "template_id": "network-1", "split": "train"}
+{"id": "t0098", "text": "user-center 的 worker 线程池打满，CPU 满载导致请求超时", "label": "cpu", "template_id": "cpu-4", "split": "train"}
+{"id": "t0197", "text": "不同环境的配置不一致，user-center 测试环境正常生产环境报错", "label": "other", "template_id": "other-8", "split": "test"}
+{"id": "t0133", "text": "cache-01 上多个进程同时申请大页内存，触发内存碎片问题", "label": "memory", "template_id": "memory-5", "split": "train"}
+{"id": "t0080", "text": "gateway-2 的 15 分钟负载平均值达到 31.7，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0088", "text": "进程 elasticsearch 占满单核，report-job 接口响应时间从 50ms 涨到 200ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0111", "text": "app-node-3 的 CPU 温度过高触发降频，性能下降一半", "label": "cpu", "template_id": "cpu-8", "split": "test"}
+{"id": "t0163", "text": "统计信息过期导致 report-job 的执行计划走错索引，查询从 10ms 变成 3s", "label": "database", "template_id": "database-6", "split": "test"}
+{"id": "t0161", "text": "app-node-3 的 binlog 增长速度异常，磁盘被日志占满", "label": "database", "template_id": "database-5", "split": "train"}
+{"id": "t0067", "text": "跨机房专线出现丢包，web-02 到 172.16.0.9 的同步延迟持续升高", "label": "network", "template_id": "network-6", "split": "test"}
+{"id": "t0169", "text": "web-02 的只读实例复制线程断了，需要重新建立同步", "label": "database", "template_id": "database-8", "split": "test"}
+{"id": "t0066", "text": "负载均衡健康检查失败，gateway-2 被摘除，怀疑网络分区", "label": "network", "template_id": "network-5", "split": "train"}
+{"id": "t0029", "text": "cache-01 的数据盘被日志撑满，order-service 服务开始报错", "label": "disk", "template_id": "disk-5", "split": "train"}
+{"id": "t0007", "text": "服务器 web-01 磁盘使用率 91%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0194", "text": "web-01 的监控面板数据缺失，采集 agent 掉线了", "label": "other", "template_id": "other-7", "split": "test"}
+{"id": "t0137", "text": "order-service 的 JVM 元空间溢出，加载的类数量超出预期", "label": "memory", "template_id": "memory-6", "split": "test"}
+{"id": "t0150", "text": "MySQL 主从延迟达到 25 秒，读请求拿到旧数据", "label": "database", "template_id": "database-0", "split": "train"}
+{"id": "t0130", "text": "web-02 可用内存不足，页缓存被大量回收，读性能下降", "label": "memory", "template_id": "memory-4", "split": "train"}
+{"id": "t0156", "text": "单表数据量超过 8000 万行，未建索引的查询扫描全表", "label": "database", "template_id": "database-3", "split": "train"}
+{"id": "t0148", "text": "MySQL 主从延迟达到 110 秒，读请求拿到旧数据", "label": "database", "template_id": "database-0", "split": "train"}
+{"id": "t0017", "text": "web-02 上 inode 用尽，无法创建新文件，df -i 显示 100%", "label": "disk", "template_id": "disk-3", "split": "train"}
+{"id": "t0071", "text": "order-service 调用第三方接口偶发 connection reset，重试可以恢复", "label": "network", "template_id": "network-7", "split": "test"}
+{"id": "t0084", "text": "进程 nginx 占满单核，report-job 接口响应时间从 50ms 涨到 200ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0102", "text": "db-01 上某个进程 CPU 占用曲线呈锯齿状，疑似死循环", "label": "cpu", "template_id": "cpu-5", "split": "train"}
+{"id": "t0049", "text": "域名解析返回 NXDOMAIN，order-service 无法连接下游依赖", "label": "network", "template_id": "network-1", "split": "train"}
+{"id": "t0181", "text": "web-02 的系统时间出现偏差，比标准时间慢 450 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0057", "text": "cache-01 和 192.168.7.45 之间的延迟从 2ms 涨到 640ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0058", "text": "web-02 和 192.168.7.45 之间的延迟从 2ms 涨到 240ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0188", "text": "payment-gateway 的日志级别被误改为 DEBUG，日志量暴涨十倍", "label": "other", "template_id": "other-5", "split": "train"}
+{"id": "t0089", "text": "app-node-3 出现大量 runnable 进程，上下文切换次数异常偏高", "label": "cpu", "template_id": "cpu-2", "split": "train"}
+{"id": "t0117", "text": "web-01 内存使用率 98%，OOM killer 杀掉了 java 进程", "label": "memory", "template_id": "memory-0", "split": "train"}
+{"id": "t0051", "text": "域名解析返回 NXDOMAIN，report-job 无法连接下游依赖", "label": "network", "template_id": "network-1", "split": "train"}
+{"id": "t0056", "text": "TCP 连接数接近 ulimit 上限，新的连接被拒绝", "label": "network", "template_id": "network-3", "split": "train"}
+{"id": "t0120", "text": "elasticsearch 的堆内存持续增长，Full GC 后没有回落，疑似泄漏", "label": "memory", "template_id": "memory-1", "split": "train"}
+{"id": "t0196", "text": "gateway-2 的监控面板数据缺失，采集 agent 掉线了", "label": "other", "template_id": "other-7", "split": "test"}
+{"id": "t0097", "text": "payment-gateway 的 worker 线程池打满，CPU 满载导致请求超时", "label": "cpu", "template_id": "cpu-4", "split": "train"}
+{"id": "t0027", "text": "web-01 的数据盘被日志撑满，report-job 服务开始报错", "label": "disk", "template_id": "disk-5", "split": "train"}
+{"id": "t0040", "text": "容器写入层把 db-01 的磁盘占满了，需要限制日志大小", "label": "disk", "template_id": "disk-8", "split": "test"}
+{"id": "t0068", "text": "跨机房专线出现丢包，cache-01 到 172.16.0.9 的同步延迟持续升高", "label": "network", "template_id": "network-6", "split": "test"}
+{"id": "t0182", "text": "app-node-3 的系统时间出现偏差，比标准时间慢 300 秒", "label": "other", "template_id": "other-3", "split": "train"}
+{"id": "t0171", "text": "db-01 的只读实例复制线程断了，需要重新建立同步", "label": "database", "template_id": "database-8", "split": "test"}
+{"id": "t0085", "text": "进程 java 占满单核，user-center 接口响应时间从 50ms 涨到 1200ms", "label": "cpu", "template_id": "cpu-1", "split": "train"}
+{"id": "t0172", "text": "user-center 的 HTTPS 证书还有 3 天过期，需要更新", "label": "other", "template_id": "other-0", "split": "train"}
+{"id": "t0006", "text": "服务器 cache-01 磁盘使用率 90%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0105", "text": "web-01 的容器被限制在 2 核，实际负载超过限额，频繁被 throttle", "label": "cpu", "template_id": "cpu-6", "split": "test"}
+{"id": "t0045", "text": "web-02 到 192.168.7.45 的请求全部超时，ping 丢包率 80%", "label": "network", "template_id": "network-0", "split": "train"}
+{"id": "t0041", "text": "容器写入层把 gateway-2 的磁盘占满了，需要限制日志大小", "label": "disk", "template_id": "disk-8", "split": "test"}
+{"id": "t0060", "text": "app-node-3 和 192.168.7.45 之间的延迟从 2ms 涨到 600ms，抖动明显", "label": "network", "template_id": "network-4", "split": "train"}
+{"id": "t0039", "text": "容器写入层把 web-02 的磁盘占满了，需要限制日志大小", "label": "disk", "template_id": "disk-8", "split": "test"}
+{"id": "t0158", "text": "数据库连接数达到 max_connections 上限，应用侧报连接失败", "label": "database", "template_id": "database-4", "split": "train"}
+{"id": "t0104", "text": "web-02 的容器被限制在 2 核，实际负载超过限额，频繁被 throttle", "label": "cpu", "template_id": "cpu-6", "split": "test"}
+{"id": "t0143", "text": "内存泄漏要几天才显现，order-service restart 后能恢复但会复发", "label": "memory", "template_id": "memory-8", "split": "test"}
+{"id": "t0090", "text": "web-02 出现大量 runnable 进程，上下文切换次数异常偏高", "label": "cpu", "template_id": "cpu-2", "split": "train"}
+{"id": "t0026", "text": "app-node-3 的数据盘被日志撑满，user-center 服务开始报错", "label": "disk", "template_id": "disk-5", "split": "train"}
+{"id": "t0170", "text": "gateway-2 的只读实例复制线程断了，需要重新建立同步", "label": "database", "template_id": "database-8", "split": "test"}
+{"id": "t0063", "text": "负载均衡健康检查失败，cache-01 被摘除，怀疑网络分区", "label": "network", "template_id": "network-5", "split": "train"}
+{"id": "t0174", "text": "report-job 的 HTTPS 证书还有 3 天过期，需要更新", "label": "other", "template_id": "other-0", "split": "train"}
+{"id": "t0053", "text": "app-node-3 的带宽跑满，出口流量达到上限，请求排队", "label": "network", "template_id": "network-2", "split": "train"}
+{"id": "t0091", "text": "gateway-2 出现大量 runnable 进程，上下文切换次数异常偏高", "label": "cpu", "template_id": "cpu-2", "split": "train"}
+{"id": "t0189", "text": "user-center 的日志级别被误改为 DEBUG，日志量暴涨十倍", "label": "other", "template_id": "other-5", "split": "train"}
+{"id": "t0093", "text": "定时任务集中触发，web-02 的 CPU 出现周期性尖峰，影响在线请求", "label": "cpu", "template_id": "cpu-3", "split": "train"}
+{"id": "t0078", "text": "web-02 的 15 分钟负载平均值达到 31.7，CPU 使用率持续 100%", "label": "cpu", "template_id": "cpu-0", "split": "train"}
+{"id": "t0010", "text": "服务器 web-01 磁盘使用率 98%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0032", "text": "db-01 清理完日志后空间没有释放，怀疑有进程持有已删除的文件", "label": "disk", "template_id": "disk-6", "split": "test"}
+{"id": "t0110", "text": "db-01 的 CPU 温度过高触发降频，性能下降一半", "label": "cpu", "template_id": "cpu-8", "split": "test"}
+{"id": "t0037", "text": "web-02 的备份目录每天增长 10G，磁盘快撑不住了", "label": "disk", "template_id": "disk-7", "split": "test"}
+{"id": "t0141", "text": "payment-gateway 的容器内存 limit 设得太小，应用启动时就被 kill", "label": "memory", "template_id": "memory-7", "split": "test"}
+{"id": "t0149", "text": "MySQL 主从延迟达到 80 秒，读请求拿到旧数据", "label": "database", "template_id": "database-0", "split": "train"}
+{"id": "t0094", "text": "定时任务集中触发，db-01 的 CPU 出现周期性尖峰，影响在线请求", "label": "cpu", "template_id": "cpu-3", "split": "train"}
+{"id": "t0009", "text": "服务器 app-node-3 磁盘使用率 99%，业务日志无法继续写入", "label": "disk", "template_id": "disk-1", "split": "train"}
+{"id": "t0139", "text": "report-job 的 JVM 元空间溢出，加载的类数量超出预期", "label": "memory", "template_id": "memory-6", "split": "test"}
+{"id": "t0038", "text": "cache-01 的备份目录每天增长 50G，磁盘快撑不住了", "label": "disk", "template_id": "disk-7", "split": "test"}
+{"id": "t0176", "text": "告警通知没有发出来，app-node-3 的钉钉机器人 token 失效", "label": "other", "template_id": "other-2", "split": "train"}
+{"id": "t0019", "text": "cache-01 上 inode 用尽，无法创建新文件，df -i 显示 100%", "label": "disk", "template_id": "disk-3", "split": "train"}

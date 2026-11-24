@@ -1,0 +1,5 @@
+models/
+outputs/lora_adapter_*/
+__pycache__/
+*.pyc
+.DS_Store
